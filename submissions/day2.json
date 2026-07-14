@@ -1,0 +1,19 @@
+{
+  "day": 2,
+  "student_name": "Akhilan VTM",
+  "github": "akhilan576",
+  "lab1_scenario": "B",
+  "lab1_prompt": "Role: A market intelligence analyst at Samsung Mobile, briefing the product management team\nGoal: Summarize a fictional competitor's new foldable phone launch, highlighting what Samsung's product team needs to know\nContext: Samsung is finalizing its own foldable roadmap for next year; the competitor launch happened this week and includes claims about hinge durability, price positioning, and a new form factor none of which the product team has seen analyzed yet\nConstraints: Exactly 3 bullets. Each bullet under 25 words. Must avoid speculation presented as fact — flag anything unconfirmed as a rumor. No marketing fluff.\nStyle/Tone: Neutral, analytical, boardroom ready, the tone of an internal competitive intel memo, not a press article\nOutput Format: 3 bullet points only, no into sentence or conclusion paragraph",
+  "lab1_output_met_constraints": true,
+  "lab1_extra_scenarios_done": 1,
+  "lab2_problem": "Galaxy Buds distribution centre — shipment/hold/restock",
+  "lab2_naive_output_summary": "The AI correctly computed 4,299 sellable units by working through shipment, hold, and restock in sequence (4,200 − 850 − 201 + 1,150), and proactively flagged the ambiguity between \"sellable\" (4,299) vs. \"total on-hand including held units\" (4,500)  asking the user to clarify which framing was intended rather than assuming.",
+  "lab2_cot_prompt": "\"A Samsung distribution hub near SRM begins the day holding 4,200 Galaxy Buds units in inventory. During the morning, a shipment moves 850 units out to three retail partners in equal amounts. Once that shipment leaves, 6% of whatever stock remains gets flagged for a quality hold and pulled from sale pending inspection. Later in the afternoon, a fresh batch of 1,150 units arrives as restock these new units are not affected by the earlier hold.\nWork through this one step at a time: first compute the shipment, then the hold, then the restock. Show each step, then state the final answer.\"",
+  "lab2_cot_output_summary": "Starting from 4,200 units, the hub ships out 850 (leaving 3,350), places a 6% quality hold on the remainder (201 units held, 3,149 sellable), then receives a 1,150-unit restock unaffected by the hold bringing sellable stock to 4,299 units. Total physical inventory at the hub is 4,500, but 201 of those units remain on hold pending inspection.",
+  "better_approach": "cot",
+  "stretch_done": true,
+  "stretch_react_prompt": "\"Calculate sellable Galaxy Buds units: start 4,200, ship 850 (3 partners), hold 6% of remainder, restock 1,150 (no hold). Show Thought → Action → Observation for each step. If any point requires data you don't have (e.g., uneven partner split, capacity limits) rather than a direct calculation, flag it as 'Would need real data: [why]' instead of guessing. End with the final sellable total and any flagged items.\"",
+  "tasks_completed": 6,
+  "tasks_total": 6,
+  "submitted_at": "2026-07-14T09:47:09.306Z"
+}
