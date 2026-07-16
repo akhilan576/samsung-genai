@@ -1,0 +1,52 @@
+{
+  "day": 4,
+  "student_name": "Akhilan VTM",
+  "github": "akhilan576",
+  "incidents": [
+    {
+      "id": "A",
+      "failure_type": "Hallucination",
+      "principle": "Reliability",
+      "justification": "The bot invented a discount policy that never existed and asserted it with full confidence, making its output undependable for the exact function it was deployed to perform."
+    },
+    {
+      "id": "B",
+      "failure_type": "Privacy Violation",
+      "principle": "Privacy",
+      "justification": "Employee messages and unredacted third-party client contract terms were logged for months with no consent mechanism, exposing data from parties who had no relationship with the tool at all."
+    },
+    {
+      "id": "C",
+      "failure_type": "Deepfake/Misinformation",
+      "principle": "Transparency",
+      "justification": "A fabricated clip of a real executive circulated with nothing marking it as synthetic, and markets priced in a decision that was never made the deception worked because its origin was concealed."
+    },
+    {
+      "id": "D",
+      "failure_type": "Bias/Discrimination",
+      "principle": "Fairness",
+      "justification": "The tool systematically penalized applicants on a near-perfect proxy for gender, producing discriminatory outcomes with no explicit gender input required."
+    },
+    {
+      "id": "E",
+      "failure_type": "Lack of Human Oversight",
+      "principle": "Human Oversight",
+      "justification": "A sharply disparate removal rate against one community went unreviewed for weeks until an outside journalist found it nobody was watching closely enough to catch it either way."
+    },
+    {
+      "id": "F",
+      "failure_type": "Deepfake/Misinformation",
+      "principle": "Security",
+      "justification": "A cloned voice alone was sufficient to move company funds, because no verification step or dual-authorisation control stood between a convincing phone call and a completed wire transfer."
+    }
+  ],
+  "justifications_written": 6,
+  "stretch_done": true,
+  "stretch_company": "Goldman Sachs",
+  "stretch_failure_type": "Bias/Discrimination",
+  "stretch_principle": "Explainability",
+  "stretch_notes": "In November 2019, developer David Heinemeier Hansson posted that Apple Card had granted him a credit limit 20× his wife's despite joint tax filing and her higher credit score; Goldman raised her limit after his complaint without requesting additional documentation, and its customer service representatives couldn't explain what had happened beyond repeating that it was the algorithm. Steve Wozniak reported the same pattern with his own wife. New York's Department of Financial Services opened an investigation and reviewed underwriting data for roughly 400,000 New York applicants — concluding in March 2021 that it found no evidence of disparate impact, and that the decisions were explainable, lawful, and consistent with the bank's credit policy. The lasting failure was not proven discrimination but the fact that neither the customers, the frontline staff, nor initially the bank could produce a reason for an adverse decision a black box that was ultimately vindicated, but only after a regulator spent sixteen months reconstructing what it should have been able to state on day one.",
+  "tasks_completed": 6,
+  "tasks_total": 6,
+  "submitted_at": "2026-07-16T06:29:10.363Z"
+}
